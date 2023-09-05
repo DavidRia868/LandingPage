@@ -1,0 +1,172 @@
+:root{
+    --color-violet: hsl(257, 40%, 49%);
+    --color-magenta:hsl(300, 69%, 71%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*importar fuentes HANKED*/
+
+@font-face {
+    font-family: Hanked-bold;
+    src: url(fonts/static/HankenGrotesk-Bold.ttf);
+}
+
+@font-face {
+    font-family: poppins-light;
+    src: url(fonts/static/Poppins-Light.ttf);
+}
+
+
+.content-page{
+    background-image: url(images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--color-violet);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    padding: 20px 50px;
+    
+    
+}
+.content-logo{
+    width: 100%;
+}
+.content-logo img{
+    width: 200px;
+}
+.content-infor{
+    
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    width: 1200px;
+    height: auto;
+}
+
+.content-img{
+    
+    width: 700px;
+    height: 450px;
+    
+}
+
+.content-img img{
+    width: 650px;
+    height: auto;
+}
+
+
+.content-text{
+
+    width: 500px;
+    padding: 50px 25px;
+}
+
+.content-text h1{
+    color: white;
+    font-family: Hanked-bold;
+    font-size: 40px;
+    
+    
+}
+
+.parrafo{
+    color: white;
+    font-family: poppins-light;
+    font-size: 14px;
+    padding: 20px 0;
+    
+}
+
+.btn-regis{
+    background-color: white;
+    font-family: poppins-light;
+    padding: 10px 60px;
+    border-radius: 40px;
+    font-size: 20px;
+    color: var(--color-violet);
+    border: none;
+    box-shadow: 1px 5px 10px 1px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+.btn-regis:hover{
+    color: white;
+    background-color: var(--color-magenta);
+}
+
+.content-redes{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    padding-right: 50px;
+}
+.content-redes img{
+    filter: invert(91%) sepia(1%) saturate(1130%) hue-rotate(17deg) brightness(98%) contrast(86%);
+    width: 42px;
+    padding-right: 10px;
+    cursor: pointer;
+    float: right;
+}
+
+.content-redes img:hover{
+    
+    filter: invert(72%) sepia(70%) saturate(1706%) hue-rotate(278deg) brightness(105%) contrast(104%);
+}
+
+/*RESPONSIVE*/
+
+@media (max-width: 1200px)
+{
+    .content-page{
+        width: 100%;
+        
+    }
+
+    .content-logo img{
+        width: 150px;
+    }
+
+    .content-infor{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .content-img{
+        width: 95%;
+        height: auto;
+    }
+
+    .content-img img{
+        width: 95%;
+        
+    }
+
+    .content-text{
+
+        width: 100%;
+        padding: 25px 25px;
+    }
+    
+    .content-redes{
+        justify-content: center;
+        align-items: center;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 500px)
+{
+    .content-page{
+        background-image: url(images/bg-mobile.svg);
+    }
+}
